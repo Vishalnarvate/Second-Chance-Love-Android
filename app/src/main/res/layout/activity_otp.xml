@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242426"
+    tools:context=".OtpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <Button
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/back_button"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:padding="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/time_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="175dp"
+            android:gravity="center_horizontal"
+            android:text="00:50"
+            android:textColor="@color/appcolor"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/enterotp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_txt"
+            android:layout_marginTop="7dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Type the verification code \n we have sent you"
+                android:textColor="#80EAC497" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edittxt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/enterotp_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="59dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/otpEdTxt1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/login_rectangle"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="25dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/appcolor"
+                android:textColorHint="@color/appcolor" />
+
+            <EditText
+                android:id="@+id/otpEdTxt2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/login_rectangle"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="25dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/appcolor"
+                android:textColorHint="@color/appcolor" />
+
+            <EditText
+                android:id="@+id/otpEdTxt3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/login_rectangle"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="25dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/appcolor"
+                android:textColorHint="@color/appcolor" />
+
+            <EditText
+                android:id="@+id/otpEdTxt4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/login_rectangle"
+                android:hint="0"
+                android:inputType="number"
+                android:maxLength="1"
+                android:paddingLeft="25dp"
+                android:paddingBottom="2dp"
+                android:textColor="@color/appcolor"
+                android:textColorHint="@color/appcolor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/requestOtpTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittxt_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:gravity="end"
+            android:text="Request : Otp"
+            android:textColor="@color/appcolor"
+            android:textSize="10sp" />
+
+
+        <Button
+            android:id="@+id/next_button_otp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/requestOtpTxt"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="143dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/back_button"
+            android:drawableLeft="@drawable/ic_baseline_arrow_forward_24"
+            android:padding="15dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

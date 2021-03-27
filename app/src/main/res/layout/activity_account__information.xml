@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242426"
+    tools:context=".Account_Information">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/back_button_accountInfo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/back_button"
+                android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+                android:padding="13dp" />
+
+            <TextView
+                android:id="@+id/accountInfo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/back_button_accountInfo"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="17dp"
+                android:text="Account Information"
+                android:textColor="@color/appcolor"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/create_account_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accountInfo_txt"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="12dp"
+                android:text="Create an account today and start matching with people."
+                android:textColor="@color/opecity50"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/login_rectangle"
+                android:layout_width="match_parent"
+                android:layout_height="138dp"
+                android:layout_below="@+id/create_account_txt"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="22dp"
+                app:srcCompat="@drawable/login_rectangle" />
+
+
+            <Spinner
+                android:id="@+id/genderSpinner"
+                android:layout_width="315dp"
+                android:layout_height="62dp"
+                android:layout_alignStart="@+id/login_rectangle"
+                android:layout_alignLeft="@+id/login_rectangle"
+                android:layout_alignTop="@+id/login_rectangle"
+                android:layout_alignEnd="@+id/login_rectangle"
+                android:layout_alignRight="@+id/login_rectangle"
+                android:layout_marginStart="-1dp"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="-12dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:backgroundTint="@color/appcolor"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/appcolor"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/choose_gender_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/login_rectangle"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:text=" * Choose your gender"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/choose_gender_txt"
+                android:layout_marginStart="45dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="34dp"
+                android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/male_txt"
+                android:layout_width="123dp"
+                android:layout_height="38dp"
+                android:background="@drawable/login_rectangle"
+                android:gravity="center"
+                android:text="Male"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/female_txt"
+                android:layout_width="123dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/login_rectangle"
+                android:gravity="center"
+                android:text="Female"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/dob_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_rectangle"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:text="Date of Birth"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/dob_linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dob_txt"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+
+                <Spinner
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/appcolor"
+                    android:paddingRight="5dp" />
+
+                <Spinner
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/dob_txt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/appcolor"
+                    android:paddingRight="5dp" />
+
+                <Spinner
+                    style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/dob_txt"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="1dp"
+                    android:backgroundTint="@color/appcolor"
+                    android:paddingRight="5dp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/country_image"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:layout_below="@+id/dob_linearLayout"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="22dp"
+                app:srcCompat="@drawable/login_rectangle" />
+
+            <Spinner
+                android:id="@+id/country_spinner"
+                android:layout_width="315dp"
+                android:layout_height="62dp"
+                android:layout_alignStart="@+id/country_image"
+                android:layout_alignLeft="@+id/country_image"
+                android:layout_alignTop="@+id/country_image"
+                android:layout_alignEnd="@+id/country_image"
+                android:layout_alignRight="@+id/country_image"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="-9dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:backgroundTint="@color/appcolor"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/appcolor"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/country_image"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="66dp"
+                android:text=" * Country"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/state_image"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:layout_below="@+id/country_image"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="22dp"
+                app:srcCompat="@drawable/login_rectangle" />
+
+            <Spinner
+                android:id="@+id/state_spinner"
+                android:layout_width="315dp"
+                android:layout_height="62dp"
+                android:layout_alignStart="@+id/state_image"
+                android:layout_alignLeft="@+id/state_image"
+                android:layout_alignTop="@+id/state_image"
+                android:layout_alignEnd="@+id/state_image"
+                android:layout_alignRight="@+id/state_image"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="-9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:backgroundTint="@color/appcolor"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/appcolor"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/state_image"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="66dp"
+                android:text=" * State"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/city_image"
+                android:layout_width="match_parent"
+                android:layout_height="98dp"
+                android:layout_below="@+id/state_image"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="22dp"
+                app:srcCompat="@drawable/login_rectangle" />
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="315dp"
+                android:layout_height="62dp"
+                android:layout_alignStart="@+id/city_image"
+                android:layout_alignLeft="@+id/city_image"
+                android:layout_alignTop="@+id/city_image"
+                android:layout_alignEnd="@+id/city_image"
+                android:layout_alignRight="@+id/city_image"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="-9dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginRight="9dp"
+                android:backgroundTint="@color/appcolor"
+                android:ems="10"
+                android:fontFamily="@font/open_sans"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/appcolor"
+                android:textSize="13sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/city_image"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginBottom="66dp"
+                android:text=" * City"
+                android:textColor="@color/appcolor"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/next_button_accountInfo"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/city_image"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:background="@drawable/back_button"
+                android:drawableLeft="@drawable/ic_baseline_arrow_forward_24"
+                android:padding="15dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

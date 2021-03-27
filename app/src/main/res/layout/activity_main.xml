@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242426"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/app_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="41dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="146dp"
+            android:background="@drawable/app_icon" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/login_rectangle"
+        android:layout_width="350dp"
+        android:layout_height="356dp"
+        android:layout_below="@+id/app_icon_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/login_rectangle" />
+
+
+    <TextView
+        android:id="@+id/mobile_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/login_rectangle"
+        android:layout_alignLeft="@+id/login_rectangle"
+        android:layout_alignTop="@+id/login_rectangle"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="45dp"
+        android:text="Mobile Number"
+        android:textSize="20dp"
+        android:textColor="@color/appcolor" />
+
+    <TextView
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_number_text"
+        android:layout_alignStart="@+id/login_rectangle"
+        android:layout_alignLeft="@+id/login_rectangle"
+        android:layout_alignEnd="@+id/login_rectangle"
+        android:layout_alignRight="@+id/login_rectangle"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Please enter your valid mobile number. We will send you a 4-digit code to verify your account."
+        android:textColor="#80EAC497"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/mobilenumber_edtxt"
+        android:layout_width="312dp"
+        android:layout_height="61dp"
+        android:layout_alignStart="@+id/login_rectangle"
+        android:layout_alignLeft="@+id/login_rectangle"
+        android:layout_alignTop="@+id/login_rectangle"
+        android:layout_alignEnd="@+id/login_rectangle"
+        android:layout_alignRight="@+id/login_rectangle"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:textColor="@color/appcolor"
+        android:hint=" "
+        android:paddingLeft="70dp"
+        android:textColorHint="#80EAC497"
+        android:background="@drawable/login_rectangle">
+
+    </EditText>
+
+    <com.hbb20.CountryCodePicker
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/mobilenumber_edtxt"
+        android:layout_alignLeft="@+id/mobilenumber_edtxt"
+        android:layout_alignBottom="@+id/mobilenumber_edtxt"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="9dp"
+        app:ccpDialog_textColor="@color/appcolor" />
+
+    <ImageView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobilenumber_edtxt"
+        android:layout_alignStart="@+id/login_rectangle"
+        android:layout_alignLeft="@+id/login_rectangle"
+        android:layout_alignEnd="@+id/login_rectangle"
+        android:layout_alignRight="@+id/login_rectangle"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:background="@drawable/continuebutton_login"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignStart="@+id/continue_btn"
+        android:layout_alignLeft="@+id/continue_btn"
+        android:layout_alignEnd="@+id/continue_btn"
+        android:layout_alignRight="@+id/continue_btn"
+        android:layout_alignBottom="@+id/continue_btn"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="21dp"
+        android:text="Continue"
+        android:textSize="16sp"
+        android:textColor="#EAC497" />
+
+
+
+
+</RelativeLayout>

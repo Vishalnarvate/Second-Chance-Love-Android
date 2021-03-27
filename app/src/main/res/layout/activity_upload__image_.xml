@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242426"
+    tools:context=".Upload_Image_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/back_button_accountInfo2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/back_button"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+            android:padding="13dp" />
+
+
+        <TextView
+            android:id="@+id/upload_image_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/back_button_accountInfo2"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="17dp"
+            android:text="Upload your images"
+            android:textColor="@color/appcolor"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/accountInfo_txt2"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="12dp"
+            android:text="Add 2 to 4 of your best photos to get a higher number of matches."
+            android:textColor="@color/opecity50"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center">
+
+
+        <Button
+            android:layout_width="138dp"
+            android:layout_height="119dp"
+            android:layout_below="@+id/create_account_txt2"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="22dp"
+            android:padding="40dp"
+            android:drawableLeft="@drawable/ic_baseline_add_24"
+           android:background="@drawable/login_rectangle" />
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/create_account_txt2"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:padding="40dp"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:background="@drawable/login_rectangle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/create_account_txt2"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:padding="40dp"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:background="@drawable/login_rectangle" />
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/create_account_txt2"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:padding="40dp"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:background="@drawable/login_rectangle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/create_account_txt2"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:padding="40dp"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:background="@drawable/login_rectangle" />
+
+            <Button
+                android:layout_width="138dp"
+                android:layout_height="119dp"
+                android:layout_below="@+id/create_account_txt2"
+                android:layout_marginStart="22dp"
+                android:layout_marginEnd="22dp"
+                android:padding="40dp"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:background="@drawable/login_rectangle" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/next_button_uploadimage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_gravity="end"
+            android:background="@drawable/back_button"
+            android:drawableLeft="@drawable/ic_baseline_arrow_forward_24"
+            android:padding="15dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

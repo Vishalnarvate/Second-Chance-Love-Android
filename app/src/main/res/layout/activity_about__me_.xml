@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242426"
+    tools:context=".About_Me_Activity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/back_button"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+        android:padding="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="26dp"
+        android:text="About me"
+        android:textColor="@color/appcolor"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:background="@drawable/login_rectangle"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:hint="Hi I am Rahul Sharma and I am 33 years old . I live in California and work as a Product Manager in a Private Firm."
+        android:textColorHint="@color/appcolor"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Interests"
+    android:textColor="@color/appcolor"
+    android:textSize="16sp"
+    android:layout_marginStart="22dp"
+    android:layout_marginLeft="22dp"
+    android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a few of your interests to match with users who have similar things in common."
+        android:textColor="#40EAC497"
+        android:textSize="16sp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="10dp"/>
+
+
+<!--    <com.google.android.material.chip.ChipGroup-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginLeft="20dp">-->
+
+<!--        <com.google.android.material.chip.Chip-->
+<!--            android:id="@+id/chipMovies"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Movies "-->
+<!--            style="@style/Theme.MaterialComponents.Light"-->
+<!--            android:background="@drawable/back_button" />-->
+
+<!--        <com.google.android.material.chip.Chip-->
+<!--            android:id="@+id/chipCooking"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Cooking "-->
+<!--            android:background="@drawable/back_button" />-->
+
+<!--        <com.google.android.material.chip.Chip-->
+<!--            android:id="@+id/chipShopping"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Shopping "-->
+<!--            android:background="@drawable/back_button"/>-->
+
+<!--    </com.google.android.material.chip.ChipGroup>-->
+
+
+    <Button
+        android:id="@+id/next_button_aboutme"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:background="@drawable/back_button"
+        android:drawableLeft="@drawable/ic_baseline_arrow_forward_24"
+        android:padding="15dp" />
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
